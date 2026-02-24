@@ -1,0 +1,33 @@
+02/12/2026 17:54:53 - INFO - __main__ - Loading Model: Qwen/Qwen3-1.7B
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/tokenizer_config.json "HTTP/1.1 200 OK"
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+02/12/2026 17:54:54 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:54:55 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B "HTTP/1.1 200 OK"
+02/12/2026 17:54:55 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:55 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+`torch_dtype` is deprecated! Use `dtype` instead!
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|█| 311/311 [00:00<00:00, 1861.67it/s, Materializing param=model.norm
+The tied weights mapping and config for this model specifies to tie model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/generation_config.json "HTTP/1.1 200 OK"
+02/12/2026 17:54:56 - INFO - __main__ - Loading and processing dataset...
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:54:56 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/coastral/korean-writing-style-instruct/9f31462314f07847534fd13f7406c330ab15d156/README.md "HTTP/1.1 200 OK"
+02/12/2026 17:54:57 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/korean-writing-style-instruct.py "HTTP/1.1 404 Not Found"
+02/12/2026 17:54:57 - INFO - httpx - HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/coastral/korean-writing-style-instruct/coastral/korean-writing-style-instruct.py "HTTP/1.1 404 Not Found"
+02/12/2026 17:54:57 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/revision/9f31462314f07847534fd13f7406c330ab15d156 "HTTP/1.1 200 OK"
+02/12/2026 17:54:58 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/.huggingface.yaml "HTTP/1.1 404 Not Found"
+02/12/2026 17:54:58 - INFO - httpx - HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=coastral/korean-writing-style-instruct "HTTP/1.1 200 OK"
+02/12/2026 17:54:58 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/tree/9f31462314f07847534fd13f7406c330ab15d156/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:54:58 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/tree/9f31462314f07847534fd13f7406c330ab15d156?recursive=false&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:54:59 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/dataset_infos.json "HTTP/1.1 404 Not Found"
+02/12/2026 17:55:00 - INFO - __main__ - 학습 시작
+02/12/2026 17:55:01 - INFO - __main__ - Epoch 0 | Step 0 | Loss: 3.3799 | LR: 0.000018
+02/12/2026 17:55:03 - INFO - __main__ - Epoch 0 | Step 10 | Loss: 2.3712 | LR: 0.000002
+02/12/2026 17:55:04 - INFO - __main__ - Training finished. Saving model...
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:06<00:00,  6.87s/it]

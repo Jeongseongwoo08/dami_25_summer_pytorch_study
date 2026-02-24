@@ -1,0 +1,69 @@
+02/12/2026 17:57:07 - INFO - __main__ - Loading Model: Qwen/Qwen3-1.7B
+02/12/2026 17:57:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+02/12/2026 17:57:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/tokenizer_config.json "HTTP/1.1 200 OK"
+02/12/2026 17:57:07 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+02/12/2026 17:57:08 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:57:08 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-1.7B "HTTP/1.1 200 OK"
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|█| 311/311 [00:00<00:00, 1902.08it/s, Materializing param=model.norm
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-1.7B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/generation_config.json "HTTP/1.1 200 OK"
+02/12/2026 17:57:09 - INFO - __main__ - Loading and processing dataset...
+02/12/2026 17:57:10 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+02/12/2026 17:57:10 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/coastral/korean-writing-style-instruct/9f31462314f07847534fd13f7406c330ab15d156/README.md "HTTP/1.1 200 OK"
+02/12/2026 17:57:10 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/korean-writing-style-instruct.py "HTTP/1.1 404 Not Found"
+02/12/2026 17:57:10 - INFO - httpx - HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/coastral/korean-writing-style-instruct/coastral/korean-writing-style-instruct.py "HTTP/1.1 404 Not Found"
+02/12/2026 17:57:11 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/revision/9f31462314f07847534fd13f7406c330ab15d156 "HTTP/1.1 200 OK"
+02/12/2026 17:57:11 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/.huggingface.yaml "HTTP/1.1 404 Not Found"
+02/12/2026 17:57:11 - INFO - httpx - HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=coastral/korean-writing-style-instruct "HTTP/1.1 200 OK"
+02/12/2026 17:57:11 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/tree/9f31462314f07847534fd13f7406c330ab15d156/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:57:12 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/coastral/korean-writing-style-instruct/tree/9f31462314f07847534fd13f7406c330ab15d156?recursive=false&expand=false "HTTP/1.1 200 OK"
+02/12/2026 17:57:12 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/coastral/korean-writing-style-instruct/resolve/9f31462314f07847534fd13f7406c330ab15d156/dataset_infos.json "HTTP/1.1 404 Not Found"
+Map: 100%|█████████████████████████████████| 28978/28978 [00:27<00:00, 1051.08 examples/s]
+02/12/2026 17:57:41 - INFO - __main__ - 학습 시작
+02/12/2026 17:57:42 - INFO - __main__ - Epoch 0 | Step 0 | Loss: 2.9044 | LR: 0.000020
+02/12/2026 17:57:44 - INFO - __main__ - Epoch 0 | Step 10 | Loss: 2.0933 | LR: 0.000020
+02/12/2026 17:57:47 - INFO - __main__ - Epoch 0 | Step 20 | Loss: 2.3052 | LR: 0.000020
+02/12/2026 17:57:50 - INFO - __main__ - Epoch 0 | Step 30 | Loss: 2.3580 | LR: 0.000020
+02/12/2026 17:57:52 - INFO - __main__ - Epoch 0 | Step 40 | Loss: 1.9683 | LR: 0.000020
+02/12/2026 17:57:55 - INFO - __main__ - Epoch 0 | Step 50 | Loss: 2.5517 | LR: 0.000020
+02/12/2026 17:57:58 - INFO - __main__ - Epoch 0 | Step 60 | Loss: 2.0118 | LR: 0.000020
+02/12/2026 17:58:00 - INFO - __main__ - Epoch 0 | Step 70 | Loss: 2.3284 | LR: 0.000020
+02/12/2026 17:58:03 - INFO - __main__ - Epoch 0 | Step 80 | Loss: 2.1848 | LR: 0.000020
+02/12/2026 17:58:06 - INFO - __main__ - Epoch 0 | Step 90 | Loss: 2.2795 | LR: 0.000019
+02/12/2026 17:58:09 - INFO - __main__ - Epoch 0 | Step 100 | Loss: 2.2049 | LR: 0.000019
+Traceback (most recent call last):
+  File "/home/xeong_oxx/finetuning_qwen/scripts/train.py", line 124, in <module>
+    for step, batch in enumerate(train_dataloader):
+  File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/data_loader.py", line 577, in __iter__
+    current_batch = send_to_device(current_batch, self.device, non_blocking=self._non_blocking)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 179, in send_to_device
+    {
+  File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 180, in <dictcomp>
+    k: t if k in skip_keys else send_to_device(t, device, non_blocking=non_blocking, skip_keys=skip_keys)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 154, in send_to_device
+    return tensor.to(device, non_blocking=non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/xeong_oxx/finetuning_qwen/scripts/train.py", line 124, in <module>
+[rank0]:     for step, batch in enumerate(train_dataloader):
+[rank0]:   File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/data_loader.py", line 577, in __iter__
+[rank0]:     current_batch = send_to_device(current_batch, self.device, non_blocking=self._non_blocking)
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 179, in send_to_device
+[rank0]:     {
+[rank0]:   File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 180, in <dictcomp>
+[rank0]:     k: t if k in skip_keys else send_to_device(t, device, non_blocking=non_blocking, skip_keys=skip_keys)
+[rank0]:                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/xeong_oxx/miniconda3/envs/py11/lib/python3.11/site-packages/accelerate/utils/operations.py", line 154, in send_to_device
+[rank0]:     return tensor.to(device, non_blocking=non_blocking)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: KeyboardInterrupt

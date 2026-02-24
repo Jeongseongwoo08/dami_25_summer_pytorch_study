@@ -1,0 +1,13 @@
+{"time":"2026-02-12T17:58:32.51547756Z","level":"INFO","msg":"stream: starting","core version":"0.24.2"}
+{"time":"2026-02-12T17:58:32.958088161Z","level":"INFO","msg":"stream: created new stream","id":"dfhosnwz"}
+{"time":"2026-02-12T17:58:32.958218343Z","level":"INFO","msg":"handler: started","stream_id":"dfhosnwz"}
+{"time":"2026-02-12T17:58:32.958332215Z","level":"INFO","msg":"stream: started","id":"dfhosnwz"}
+{"time":"2026-02-12T17:58:32.958376345Z","level":"INFO","msg":"sender: started","stream_id":"dfhosnwz"}
+{"time":"2026-02-12T17:58:32.958381505Z","level":"INFO","msg":"writer: started","stream_id":"dfhosnwz"}
+{"time":"2026-02-12T18:02:33.722322675Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/mytnt831-kangwon-national-university/qwen-finetuning-coastral/dfhosnwz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-02-12T18:15:03.764229432Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-12T18:15:04.15840033Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-12T18:15:04.16171581Z","level":"INFO","msg":"stream: closing","id":"dfhosnwz"}
+{"time":"2026-02-12T18:15:04.16172877Z","level":"INFO","msg":"handler: closed","stream_id":"dfhosnwz"}
+{"time":"2026-02-12T18:15:04.16182998Z","level":"INFO","msg":"sender: closed","stream_id":"dfhosnwz"}
+{"time":"2026-02-12T18:15:04.16183844Z","level":"INFO","msg":"stream: closed","id":"dfhosnwz"}

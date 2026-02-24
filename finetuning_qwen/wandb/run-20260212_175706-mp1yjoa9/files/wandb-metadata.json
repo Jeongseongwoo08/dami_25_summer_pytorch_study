@@ -1,0 +1,82 @@
+{
+  "os": "Linux-6.8.0-90-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.14",
+  "startedAt": "2026-02-12T17:57:06.106730Z",
+  "program": "/home/xeong_oxx/finetuning_qwen/scripts/train.py",
+  "codePath": "scripts/train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/Jeongseongwoo08/finetuning_qwen.git",
+    "commit": "72835209955047a16026c3535ac9dbf1bedb984c"
+  },
+  "email": "mytnt831@gmail.com",
+  "root": "/home/xeong_oxx/finetuning_qwen/scripts",
+  "host": "dami-red",
+  "executable": "/home/xeong_oxx/miniconda3/envs/py11/bin/python3.11",
+  "cpu_count": 192,
+  "cpu_count_logical": 192,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_count": 7,
+  "disk": {
+    "/": {
+      "total": "1798634659840",
+      "used": "44969644032"
+    }
+  },
+  "memory": {
+    "total": "540476588032"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-104e7516-7976-64d9-6af0-50dc1a75fb34"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-b2fe8bdf-be6c-db7d-ffcc-b4c9481a711c"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-5af0bc3f-ce32-1237-3544-be2751861bd8"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-b0ffd117-8c8f-fc36-559a-e8a6ebd822dc"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-fe5f6721-2e0b-221a-3565-ebf6badb8f16"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-77a6219d-3e88-b7da-e56d-117019def4fe"
+    },
+    {
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "memoryTotal": "102641958912",
+      "cudaCores": 24064,
+      "architecture": "Blackwell",
+      "uuid": "GPU-cbc2d13d-a173-75c2-a804-ac2dddf02a14"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "dculkkulmq68axhldy9nibfxkb1cn1co"
+}

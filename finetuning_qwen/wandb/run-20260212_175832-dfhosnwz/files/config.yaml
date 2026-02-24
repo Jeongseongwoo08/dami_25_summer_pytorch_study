@@ -1,0 +1,103 @@
+_wandb:
+    value:
+        cli_version: 0.24.2
+        e:
+            7e29gquh6giw0er7kyoag6l8kqmgb7js:
+                codePath: scripts/train.py
+                codePathLocal: train.py
+                cpu_count: 192
+                cpu_count_logical: 192
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1798634659840"
+                        used: "44969676800"
+                email: mytnt831@gmail.com
+                executable: /home/xeong_oxx/miniconda3/envs/py11/bin/python3.11
+                git:
+                    commit: 72835209955047a16026c3535ac9dbf1bedb984c
+                    remote: https://github.com/Jeongseongwoo08/finetuning_qwen.git
+                gpu: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                gpu_count: 7
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-104e7516-7976-64d9-6af0-50dc1a75fb34
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-b2fe8bdf-be6c-db7d-ffcc-b4c9481a711c
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-5af0bc3f-ce32-1237-3544-be2751861bd8
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-b0ffd117-8c8f-fc36-559a-e8a6ebd822dc
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-fe5f6721-2e0b-221a-3565-ebf6badb8f16
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-77a6219d-3e88-b7da-e56d-117019def4fe
+                    - architecture: Blackwell
+                      cudaCores: 24064
+                      memoryTotal: "102641958912"
+                      name: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+                      uuid: GPU-cbc2d13d-a173-75c2-a804-ac2dddf02a14
+                host: dami-red
+                memory:
+                    total: "540476588032"
+                os: Linux-6.8.0-90-generic-x86_64-with-glibc2.39
+                program: /home/xeong_oxx/finetuning_qwen/scripts/train.py
+                python: CPython 3.11.14
+                root: /home/xeong_oxx/finetuning_qwen/scripts
+                startedAt: "2026-02-12T17:58:32.282101Z"
+                writerId: 7e29gquh6giw0er7kyoag6l8kqmgb7js
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+            "3":
+                - 2
+                - 61
+            "4": 3.11.14
+            "5": 0.24.2
+            "6": 5.1.0
+            "12": 0.24.2
+            "13": linux-x86_64
+batch_size:
+    value: 2
+dataset_name:
+    value: coastral/korean-writing-style-instruct
+lr:
+    value: 2e-05
+max_length:
+    value: 512
+model_name:
+    value: Qwen/Qwen3-1.7B
+num_epochs:
+    value: 1
+seed:
+    value: 42
