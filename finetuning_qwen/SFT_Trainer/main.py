@@ -14,7 +14,7 @@ from utils import get_preprocess_function, evaluate_model
 
 
 @hydra.main(version_base=None, config_name="qwen_sft_config")
-def main(cfg: MainConfig):     
+def main(cfg: MainConfig):
     # logging 설정
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
@@ -47,6 +47,7 @@ def main(cfg: MainConfig):
         config=config,
         torch_dtype=torch.bfloat16,
         attn_implementation="sdpa"
+        # kernels-community/vllm-flash-atten2
     )
     
     # 3. 데이터 로드 및 전처리
@@ -69,7 +70,7 @@ def main(cfg: MainConfig):
     train_dataset = train_dataset.map(process_data_fn, remove_columns=["conversations"])
     eval_dataset = eval_dataset.map(process_data_fn, remove_columns=["conversations"])
     
-    # LoRA 적용 시작
+    # LoRA 적용
     lora_config = peftLoraConfig(
         r=cfg.lora.lora_r,
         lora_alpha=cfg.lora.lora_alpha,
@@ -86,7 +87,7 @@ def main(cfg: MainConfig):
         per_device_eval_batch_size=cfg.sft.batch_size,
         num_train_epochs=cfg.sft.epoch_count,
         weight_decay=cfg.sft.weight_decay,
-        # max_seq_length=cfg.base.max_length, #  데이터를 이미 max_length로 잘라둠 + trl에서 max_length 관련된 인자를 어디에 둬야하는지 계속 오류
+        max_length=cfg.base.max_length, # max_seq_length -> max_length
         bf16=True,
         eval_strategy="epoch", # 매 epoch 끝마다 평가
         save_strategy="epoch", #매 epoch 끝마다 모델 저장
