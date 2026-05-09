@@ -1,0 +1,62 @@
+# LoRA Fine-tuning 설정 파일
+
+# 모델 설정
+model:
+  name_or_path: "Qwen/Qwen2.5-0.5B"
+
+# LoRA 설정
+lora:
+  r: 16                    # LoRA rank (낮을수록 파라미터 적음)
+  lora_alpha: 32           # LoRA alpha (scaling factor)
+  target_modules:          # LoRA를 적용할 모듈
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  lora_dropout: 0.05       # LoRA dropout
+  bias: "none"             # bias 학습 여부: "none", "all", "lora_only"
+  task_type: "CAUSAL_LM"   # 태스크 타입: CAUSAL_LM (생성), SEQ_CLS (분류)
+
+# 학습 설정
+training:
+  output_dir: "./checkpoints/lora_translation"  # 체크포인트 저장 경로
+  num_train_epochs: 3                    # 학습 에포크 수
+  per_device_train_batch_size: 8         # 배치 크기 
+  per_device_eval_batch_size: 4          # 평가 배치 크기
+  gradient_accumulation_steps: 4         # 그래디언트 누적 (효과적 배치 크기 = 4 * 4 = 16)
+  learning_rate: 1.0e-4                  # 학습률                     
+  logging_steps: 30                      # 로깅 주기 
+  save_strategy: "steps"                 # 저장 전략
+  save_total_limit: 1                    # 저장할 체크포인트 최대 개수
+  bf16: true                             # BF16 사용 (VRAM 절약, 더 나은 수치 안정성)
+  dataloader_num_workers: 2              # 데이터 로더 워커 수
+  remove_unused_columns: false           # 사용하지 않는 컬럼 제거 여부
+
+# 데이터 설정
+data:
+  raw_data_dir: "data/raw/translation"    # 원본 데이터 디렉토리
+  processed_dir: "data/processed/translation"  # 전처리된 데이터 디렉토리
+  max_length: 128                         # 최대 시퀀스 길이
+  prompt_column: "prompt"                 # Prompt 컬럼명
+  response_column: "response"             # Response 컬럼명              
+
+# Generation 설정
+generation:
+  max_new_tokens: 32                      # 생성할 최대 토큰 수
+  do_sample: false                        # 샘플링 사용 여부
+  temperature: 0.0                        # Temperature
+  num_beams: 1
+  early_stopping: true
+  
+
+# 평가 설정
+evaluation:
+  metrics:                                # 평가 지표
+    - "bleu_score"
+
+# 기타 설정
+seed: 42                                  # 랜덤 시드
+report_to: "none"                         # 로깅 도구: "wandb", "tensorboard", "none"
